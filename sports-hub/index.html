@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="sports-hub 个人运动日历同步工具：功能、Google 日历权限与数据处理说明。">
+<title>sports-hub · 运动活动日历同步</title>
+<link rel="stylesheet" href="/sports-hub/style.css">
+</head>
+<body>
+<header>
+<a href="/sports-hub/">sports-hub</a>
+<nav aria-label="主要导航">
+<a href="/sports-hub/">应用介绍</a>
+<a href="/sports-hub/privacy/">隐私政策</a>
+<a href="/sports-hub/terms/">使用条款</a>
+</nav>
+</header>
+<main>
+<p class="eyebrow">个人运动记录工具 / PERSONAL UTILITY</p>
+<h1>把运动记录放进日历</h1>
+<p class="intro">sports-hub 将已授权 Strava 账号中的运动活动同步到用户选择的 Google 日历，方便回顾运动时间与活动摘要。</p>
+<div class="card">
+<h2>它做什么</h2>
+<p>根据活动记录创建日历事件，并在后续同步检查时更新名称、起止时间和描述。描述包含运动类型、距离及累计爬升；同一活动使用稳定标识关联日历事件，避免重复创建。</p>
+<p>这是由 CharlesV0 维护的个人用途工具。同步程序运行在用户控制的设备上；本网站仅提供应用介绍与政策说明，不提供在线登录或日历操作入口。</p>
+</div>
+<h2>为什么需要 Google 日历权限</h2>
+<p>应用通过 Google OAuth 请求日历事件权限 <code>https://www.googleapis.com/auth/calendar.events</code>，用于读取核验、创建、更新及按同步操作删除关联事件。该权限本身可覆盖您有权限访问的日历中的事件；应用配置指定实际操作的目标日历。</p>
+<p>日历事件会包含活动名称、时间、运动摘要和用于关联的活动标识。请根据日历的共享设置选择目标日历，尤其是原本私密的运动记录。</p>
+<h2>数据与控制权</h2>
+<p>OAuth 凭据与同步状态保存在运行设备上，不发布到本站。您可以随时停止同步，并在 Google 账号中撤销访问权限。详细的数据处理、保留和删除方式见<a href="/sports-hub/privacy/">隐私政策</a>。</p>
+<h2>联系维护者</h2>
+<p>CharlesV0 · <a href="mailto:3149030026a@gmail.com">3149030026a@gmail.com</a>
+</p>
+</main>
+<footer>sports-hub · CharlesV0 · 个人运动记录工具</footer>
+</body>
+</html>
